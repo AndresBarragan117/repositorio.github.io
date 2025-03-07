@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #dad7d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../img/fondonue.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
+    background-attachment: fixed; /* Establece la imagen de fondo como fija */
+}
+/* Sección de video */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px); 
+    overflow: hidden;
+
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    pointer-events: none;
+}
+
+.fullscreen-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border: 2px solid #000;
+    box-shadow: 4px 4px 10px #383737;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header{
+    width: 80%;
+    height: 6em; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 20px 0px;
+}
+
+.title {
+    font-size: 2em;
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.nav{
+    width: 80%;
+    height: 3em;
+    margin-bottom: 20px;
+}
+
+.barraNav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.menu{
+    width: 20%;
+    height: 100%;
+    background-color: #9e34a1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: background-color 0.2s;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0px 20px;
+}
+
+#IniciarS{    
+    background-color: white;
+    color: black;
+}
+#IniciarS:hover{
+    background-color: #494747;  
+    color: white;
+}
+.menu:hover{
+    background-color: #c9c9c9;
+    color: black;
+}
+
+.banner{
+    width: 80%;
+    height: calc(70vh - 1em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-banner{
+    width: 100%; 
+    height: 90%;
+}
+
+.main{
+    width: 80%;
+    height: 70em;
+}
+
+.article, .equipos, .programas{
+    background-color: #ffffffe0;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 10px #383737;
+}
+
+.title-article, .title-equipos, .title-programas{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 1000;
+    margin-bottom: 15px;
+    color: #000;
+}
+.article p, .lista-equipos, .lista-programas {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #000;
+}
+.equipos, .programas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-equipos, .img-programas{
+    max-width: 100%;
+    height: 20em;
+    border-radius: 45%;
+} 
+
+.img-equipos, .img-programas {
+    max-width: 100%;
+    height: 20em;
+    border-radius: 45%;
+    transition: transform 0.5s ease; 
+}
+
+.img-equipos:hover, .img-programas:hover {
+    transform: scale(1.1); 
+}
+.inscripcion{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-inscripcion{
+    width: 180px;
+    height: 45px;
+    padding: 5px 10px; 
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 20px; 
+    box-shadow: 2px 2px 5px #383737;
+    background-color: #e7e7e7;
+    transition: background-color 0.1s;
+    color: #202020;
+    cursor: pointer;
+}   
+.btn-inscripcion:hover{
+    background-color: #ddd;
+}
+
+.mapa {
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.footer {
+    width: 100%;
+    line-height: 1.5;
+    background-color: #505050;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.horario-ubicacion {
+    margin-bottom: 20px;
+}
+
+.avisos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.avisos a {
+    color: #ffffff;
+}
+
+.derechos {
+    margin-top: auto; 
+}
+.redes-sociales{
+    margin-bottom: 10px;
+}
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #111; 
+    font-size: 30px;
+    transition: color 0.3s ease; 
+}
+
+.redes-sociales .fa-facebook:hover {
+    color: #0b57ca; 
+}
+
+.redes-sociales .fa-whatsapp:hover {
+    color: #00bb1f; 
+}
+
+.redes-sociales .fa-instagram:hover {
+    color: #7c2197; 
+}
+
+.redes-sociales .fa-twitter:hover {
+    color: #ffffff; 
+}
+
+.redes-sociales .fa-google-plus:hover {
+    color: #e01d1d; 
+}

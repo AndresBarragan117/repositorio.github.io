@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(216, 214, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 80%;
+    height: 8em;
+    background-color: rgb(127, 198, 231);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.title-header{
+    font-size: 5em;
+    color: black;
+    animation: scale-up-vertical-center 0.4s;
+}
+
+.nav{
+    width: 80%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(127, 198, 231);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.barnav{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0em 3em;
+    border-radius: 20px;
+}
+
+.menu{
+    width: 10em;
+    height: 4em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: background-color 0.5s;
+    background-color: rgb(199, 199, 199);
+    margin: 0em 1em;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu:hover{
+    background-color: rgb(150, 150, 150);
+}
+
+section{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .caja-nombre{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0em;
+}
+
+section .caja-nombre img{
+    width: 5em;
+    height: 5em;
+    margin: 0em 1em;
+}
+
+section .caja-nombre h1{
+    font-size: 2em;
+    color: black;
+}
+
+section .informacion{
+    width: 100%;
+    display: flex;
+    
+}
+
+section .informacion img{
+    width: 20%;
+    height: 15em;
+    margin-left: 1em;
+    margin-right: 2em;
+    border-radius: 50%;
+}
+
+section .informacion .info-mi{
+    width: 80%;
+}
+
+section .informacion .info-mi p{
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    margin: 1em 1em;
+}
+
+section .informacion .habilidades{
+    width: 20%;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3em;
+    font-size: 1.3em;
+}
+
+section .caja-proyectos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em 0em;
+}
+
+section .caja-proyectos .proyecto{
+    width: 30%;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(199, 199, 199);
+    margin: 0em 1em;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 1em;
+}
+
+section .caja-proyectos .proyecto h2{
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+
+section .caja-proyectos .proyecto a img{
+    width: 100%;
+    height: 11em;
+    border-radius: 20px;
+}
+
+section .caja-proyectos .proyecto a img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+section .info-contacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width: 80%;
+    background-color: rgb(199, 199, 199);
+    border-radius: 20px;
+}
+
+.footer .caja-footer{
+    width: 100%;
+    padding: 30px 20px 10px ;
+}
+
+.footer .caja-footer .caja-iconos{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .caja-footer .caja-iconos a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.footer .caja-footer .caja-iconos a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+.footer .caja-footer .caja-iconos a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.footer .caja-footer .caja-iconos a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footer .caja-footer .nav-footer{
+    margin: 10px 0;
+}
+
+.footer .caja-footer .nav-footer ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer .caja-footer .nav-footer ul li a{
+    color:black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer .caja-footer .nav-footer ul li a:hover{
+    opacity: 1;
+}
+
+.footer .caja-copy{
+    background-color: rgb(127, 198, 231);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.footer .caja-copy p{
+    color: black;
+}
+
+@media (max-width: 700px){
+    .nav-footer ul{
+        flex-direction: column;
+    } 
+    .nav-footer ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .caja-iconos a{
+        padding: 8px;
+        margin: 4px;
+    }
+}

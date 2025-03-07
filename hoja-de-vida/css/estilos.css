@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(206, 203, 206);
+}
+
+.fondo-div{
+    display: flex;
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(206, 203, 206);
+    flex-direction: row;
+    align-items: stretch;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+p, li{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.caja-img-perfil{
+    display: flex;
+    justify-content: center;
+}
+
+.img-perfil{
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.contenedor-izquierda{
+    display: inline-block;
+    width: 50%;
+    background-color: rgb(240, 228, 205);
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.tamaño-img-iconos{
+    width: 40px;
+    height: auto;
+    padding-right: 5%;
+}
+
+.caja-identificacion{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.info-profesional{
+    display: flex;
+    flex-direction: column;
+}
+
+.habilidades-idiomas{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+}
+
+.idiomas{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-derecha{
+    display: inline-block;
+    width: 50%;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+/*.contenedor-informacion{
+    flex-direction: column;
+}*/
+
+.caja-informacion{
+    padding-left: 20px;
+}

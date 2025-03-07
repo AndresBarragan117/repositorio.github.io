@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="formulario-container">
+        <div class="header">
+            <h1>Formulario de Datos Personales y Preferencias</h1>
+            <p class="descripcion-formulario">Este formulario nos ayudará a conocer mejor sus datos personales y preferencias para ofrecerle un mejor servicio.</p>
+        </div>
+
+        <form onsubmit="return false;">
+            <!-- Datos Personales -->
+            <div class="seccion"> 
+                <h2 class="seccion-titulo">Datos Personales</h2>
+                <div class="grid">
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre <span class="campo-requerido">*</span></label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="apellidos">Apellidos <span class="campo-requerido">*</span></label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="email">Email <span class="campo-requerido">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="fecha_nacimiento">Fecha de Nacimiento <span class="campo-requerido">*</span></label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label>Género</label>
+                        <select required>
+                            <option value="">Seleccione su genero</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dirección -->
+            <div class="seccion">
+                <h2 class="seccion-titulo">Dirección</h2>
+                <div class="grupo-formulario">
+                    <label for="direccion">Dirección Completa <span class="campo-requerido">*</span></label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+
+                <div class="grid">
+                    <div class="grupo-formulario">
+                        <label for="ciudad">Ciudad <span class="campo-requerido">*</span></label>
+                        <input type="text" id="ciudad" name="ciudad" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="codigo_postal">Código Postal <span class="campo-requerido">*</span></label>
+                        <input type="text" id="codigo_postal" name="codigo_postal" pattern="[0-9]{5}" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="Departamento">Departamento <span class="campo-requerido">*</span></label>
+                        <select required>
+                            <option value="">Seleccione un departamento</option>
+                            <option value="Huila">Huila</option>
+                            <option value="Meta">Meta</option>
+                            <option value="Cauca">Cauca</option>
+                            <option value="Choco">Choco</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seccion">
+                <h2 class="seccion-titulo">Preferencias</h2>
+                <div class="grupo-formulario">
+                    <label>Intereses</label>
+                    <div class="checkbox-grupo">
+                        <label class="checkbox-opcion">
+                            <input type="checkbox" name="intereses[]" value="deportes">
+                            Deportes
+                        </label>
+                        <label class="checkbox-opcion">
+                            <input type="checkbox" name="intereses[]" value="musica">
+                            Música
+                        </label>
+                        <label class="checkbox-opcion">
+                            <input type="checkbox" name="intereses[]" value="tecnologia">
+                            Tecnología
+                        </label>
+                        <label class="checkbox-opcion">
+                            <input type="checkbox" name="intereses[]" value="viajes">
+                            Viajes
+                        </label>
+                        <label class="checkbox-opcion">
+                            <input type="checkbox" name="intereses[]" value="lectura">
+                            Lectura
+                        </label>
+                        <label class="checkbox-opcion">
+                            <input type="checkbox" name="intereses[]" value="cine">
+                            Cine
+                        </label>
+                    </div>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="comentarios">Comentarios Adicionales</label>
+                    <textarea placeholder="¿Algo más que quieras contarnos?"></textarea>
+                </div>
+            </div>
+
+            <div class="botones">
+                <button type="submit" class="btn-primario">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
